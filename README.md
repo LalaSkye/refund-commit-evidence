@@ -37,9 +37,22 @@ The unsafe control shows that the ledger observation can reveal an effect commit
 
 The archive retains its original “Private review copy” label as part of the historic record. Published here byte for byte, it retains the checksum above.
 
+## Reproduce
+
+[![Reproduce refund test](https://github.com/LalaSkye/refund-commit-evidence/actions/workflows/reproduce.yml/badge.svg?branch=main)](https://github.com/LalaSkye/refund-commit-evidence/actions/workflows/reproduce.yml)
+
+With Python 3.11 or later, from a checkout run:
+
+    python tools/reproduce.py
+
+The workflow was written and checked locally by GitHub Copilot. GitHub's runners
+run inside Ricky's own repository and custody: this is a repeat, not independent
+reproduction. Independent reproduction means someone outside forks the named
+commit and runs it in their own account.
+
 ## Rerun it yourself
 
-**Prerequisite:** Python 3 with the standard-library `sqlite3` module. No other dependencies. Only the recorded runtime above has been used.
+**Prerequisite:** Python 3 with the standard-library `sqlite3` module. No other dependencies. The original capture used the runtime above.
 
 Extract the archive and run:
 
